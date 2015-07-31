@@ -2,6 +2,7 @@ indent2obj
 ==========
 
 [![Build Status](http://img.shields.io/travis/tsuyoshiwada/indent2obj.svg?style=flat-square)](https://travis-ci.org/tsuyoshiwada/indent2obj)
+[![npm version](https://img.shields.io/npm/v/indent2obj.svg?style=flat-square)](http://badge.fury.io/js/indent2obj)
 
 
 Hierarchy expressed by the indent is converted into the JavaScript object.
