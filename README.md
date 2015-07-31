@@ -23,7 +23,7 @@ $ bower install indent2obj
 
 ### Basic
 
-1. Download the [indent2obj.min.js](@TODO).  
+1. Download the [indent2obj.min.js](https://raw.githubusercontent.com/tsuyoshiwada/indent2obj/master/indent2obj.min.js).  
 2. Load it in the script tag.
 
 
@@ -110,7 +110,7 @@ indent2obj(input, "    ");
 ## Settings
 
 ```javascript
-indent2obj.defaultIndent = /(?:\t|  )/;
+indent2obj.defaultIndent = "  ";
 
 indent2obj.keys = {
   name: "name",
@@ -131,7 +131,7 @@ indent2obj.keys = {
 
 
 ## License
-Released under the [MIT Licence](https://github.com/tsuyoshiwada/indent2obj/blob/master/LICENSE)
+Released under the [MIT Licence](https://raw.githubusercontent.com/tsuyoshiwada/indent2obj/master/LICENSE)
 
 
 ## Author
