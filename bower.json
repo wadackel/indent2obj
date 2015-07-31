@@ -1,0 +1,32 @@
+{
+  "name": "indent2obj",
+  "main": "indent2obj.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tsuyoshiwada/indent2obj",
+  "authors": [
+    "tsuyoshiwada"
+  ],
+  "description": "Hierarchy expressed by the indent is converted into the JavaScript object.",
+  "keywords": [
+    "string",
+    "tree",
+    "object",
+    "util",
+    "server",
+    "client",
+    "browser"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    ".DS_Store",
+    ".gitignore",
+    ".jshintrc",
+    ".travis.yml",
+    "package.json",
+    "gulpfile.coffee",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
