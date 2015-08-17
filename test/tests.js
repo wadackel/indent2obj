@@ -7,7 +7,7 @@ QUnit.test("should be parsed.", function(assert){
     "    depth2",
     "    depth2",
     "      depth3",
-    "  depth1",
+    "  depth1  hoge",
     "  depth1",
     "    depth2",
     "      depth3",
@@ -36,7 +36,7 @@ QUnit.test("should be parsed.", function(assert){
           ]
         },
         {
-          name: "depth1",
+          name: "depth1  hoge",
           children: []
         },
         {
@@ -66,7 +66,7 @@ QUnit.test("should be interpreting indents only tab.", function(assert){
     "node1",
     "\tnode2",
     "  node3",
-    "\t  node4",
+    "\t  node4\tnode4-hoge",
     "\t\tnode5",
   ].join("\n"), "\t");
 
@@ -84,7 +84,7 @@ QUnit.test("should be interpreting indents only tab.", function(assert){
       name: "  node3",
       children: [
         {
-          name: "  node4",
+          name: "  node4\tnode4-hoge",
           children: [
             {
               name: "node5",

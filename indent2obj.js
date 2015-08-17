@@ -1,7 +1,7 @@
 /*!
  * indent2obj
  * 
- * @version 0.0.1
+ * @version 0.0.2
  * @license MIT
  * @author tsuyoshiwada
  * @url https://github.com/tsuyoshiwada/indent2obj
@@ -17,11 +17,33 @@
   }
 
 
+  function createArray(value, length){
+    var array = [], i;
+    for( i = 0; i < length; i++ ) array.push(value);
+    return array;
+  }
+
+
+  function parseChild(row, indent){
+    var matches = row.match(new RegExp("^((?:" + indent + ")*)(.*)$")),
+        results;
+
+    if( matches[1] ){
+      results = createArray("", matches[1].split(indent).length - 1);
+      results.push(matches[2]);
+    }else{
+      results = [matches[2]];
+    }
+
+    return results;
+  }
+
+
   function getNodes(rows, indent, depth, index){
     var children = [], i;
 
     for( i = index; i < rows.length; i++ ){
-      var child = rows[i].split(indent),
+      var child = parseChild(rows[i], indent),
           childDepth = child.length,
           childName = child[childDepth - 1],
           obj = {};
