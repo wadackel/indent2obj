@@ -1,6 +1,6 @@
 {
   "name": "indent2obj",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Hierarchy expressed by the indent is converted into the JavaScript object.",
   "keywords": [
     "string",

@@ -1,7 +1,7 @@
 {
   "name": "indent2obj",
   "main": "indent2obj.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/tsuyoshiwada/indent2obj",
   "authors": [
     "tsuyoshiwada"

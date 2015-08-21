@@ -1,15 +1,13 @@
 /*!
  * indent2obj
  * 
- * @version 0.0.2
+ * @version 0.0.3
  * @license MIT
  * @author tsuyoshiwada
  * @url https://github.com/tsuyoshiwada/indent2obj
  */
-(function(){
+(function(root){
   "use strict";
-
-  var root = this;
 
 
   function trim(input){
@@ -40,7 +38,7 @@
 
 
   function getNodes(rows, indent, depth, index){
-    var children = [], i;
+    var keys = indent2obj.keys, children = [], i;
 
     for( i = index; i < rows.length; i++ ){
       var child = parseChild(rows[i], indent),
@@ -53,8 +51,8 @@
       if( depth > childDepth && i > index ) break;
 
       if( depth === childDepth ){
-        obj[indent2obj.keys.name] = childName;
-        obj[indent2obj.keys.children] = getNodes(rows, indent, depth + 1, i);
+        obj[keys.name] = childName;
+        obj[keys.children] = getNodes(rows, indent, depth + 1, i);
         children.push(obj);
       }
     }
@@ -81,7 +79,7 @@
   if( typeof module === "object" && typeof module.exports === "object" ){
     module.exports = indent2obj;
 
-  /*global define */
+  /* global define */
   }else if( typeof define === "function" && define.amd ){
     define("indent2obj", indent2obj);
 
@@ -89,4 +87,4 @@
     root.indent2obj = indent2obj;
   }
 
-}.call(this));
+}(this));
