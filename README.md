@@ -4,6 +4,7 @@ indent2obj
 [![Build Status](http://img.shields.io/travis/tsuyoshiwada/indent2obj.svg?style=flat-square)](https://travis-ci.org/tsuyoshiwada/indent2obj)
 [![npm version](https://img.shields.io/npm/v/indent2obj.svg?style=flat-square)](http://badge.fury.io/js/indent2obj)
 [![Bower](https://img.shields.io/bower/v/indent2obj.svg?style=flat-square)](http://bower.io/search/?q=indent2obj)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/tsuyoshiwada/indent2obj/master/LICENSE)
 
 
 Hierarchy expressed by the indent is converted into the JavaScript object.
@@ -30,7 +31,7 @@ $ bower install indent2obj
 
 
 ```html
-<script type="text/javascript" src="indent2obj.js"></script>
+<script type="text/javascript" src="indent2obj.min.js"></script>
 ```
 
 
